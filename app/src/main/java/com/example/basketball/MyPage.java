@@ -48,7 +48,7 @@ public class MyPage<OnActivityResult> extends AppCompatActivity {
 
                 String name = "";
 
-                Cursor cursor = helper.getData(id,name);
+                Cursor cursor = helper.getData(id);
 
                 cursor.moveToNext();
 
@@ -85,6 +85,19 @@ public class MyPage<OnActivityResult> extends AppCompatActivity {
                 intent.putExtras(bundle);
 
                 startActivity(intent);
+
+            }
+        });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(),BoardPage.class);
+
+                intent.putExtra("id",id);
+
+                startActivity(intent);
+
 
             }
         });

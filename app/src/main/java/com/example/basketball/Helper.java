@@ -152,11 +152,10 @@ public class Helper extends SQLiteOpenHelper {
         return true;
 }
 
-    public Cursor getData(String id,String name){
+    public Cursor getData(String id){
 
         Log.d(getClass().getName(),"헹퍼에서받는값"+id);
 
-        Log.d(getClass().getName(),"헹퍼에서받는값"+name);
 
         SQLiteDatabase database = this.getWritableDatabase();
 

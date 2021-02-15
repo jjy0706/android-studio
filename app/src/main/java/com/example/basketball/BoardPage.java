@@ -121,7 +121,9 @@ public class BoardPage extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(),MyPage.class);
 
                 intent.putExtras(bundle);
+
                 startActivity(intent);
+
                 break;
             case R.id.out:
                 Intent intent1 = new Intent(getApplicationContext(),MainActivity.class);
@@ -135,8 +137,8 @@ public class BoardPage extends AppCompatActivity {
 
     @Override
     protected void onResume() {
-        super.onResume();
 
+        super.onResume();
         adapter.clear();
         adapter.addAll(helper.Board());
         //adapter.notifyDataSetChanged();
