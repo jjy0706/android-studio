@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8386C2CA"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#A6000000"
+        android:gravity="center"
+        android:text="유 저 게 시 판"
+        android:textColor="#FDFDFD"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="20dp"
+    />
+    <Button
+        android:id="@+id/addinfo"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="+"
+        android:textSize="30dp"
+        android:layout_gravity="right"
+        />
+</LinearLayout>

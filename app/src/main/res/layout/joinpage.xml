@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backsample1"
+    >
+    //Title
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="회 원 가 입"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:textColor="#FDFDFD"
+        android:textStyle="bold"
+        android:background="#A6000000"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        //ID입력란
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이디:"
+                android:textSize="25sp"
+                android:textColor="#FDFDFD"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/JoinId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FDFDFD"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        //PW입력란
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호:"
+                android:textSize="25sp"
+                android:textColor="#FDFDFD"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/JoinPW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FDFDFD"
+                android:textStyle="bold"
+                android:inputType="textPassword"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비번재입력:"
+                android:textSize="25sp"
+                android:textColor="#FDFDFD"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/JoinPW1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FDFDFD"
+                android:textStyle="bold"
+                android:inputType="textPassword"
+
+                />
+
+        </LinearLayout>
+
+        //PW입력란
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="닉네임 :"
+                android:textSize="25sp"
+                android:textColor="#FDFDFD"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/JoinNickName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FDFDFD"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        //PW입력란
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전화번호:"
+                android:textSize="25sp"
+                android:textColor="#FDFDFD"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/JoinPH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FDFDFD"
+                android:textStyle="bold"
+                android:hint="010-0000-0000"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        >
+
+        <Button
+            android:id="@+id/Loginback"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="로그인화면가기"
+            android:background="#000000"
+            android:textColor="#FDFDFD"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="가입완료"
+            android:background="#000000"
+            android:textColor="#FDFDFD"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
